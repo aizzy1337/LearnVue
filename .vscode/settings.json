@@ -1,0 +1,11 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll.ts": true,
+		"source.fixAll.eslint": true
+	},
+	"editor.inlayHints.enabled": "off",
+	"eslint.workingDirectories": [
+		{"mode" : "auto"}
+    ],
+    "editor.tabSize": 2
+}
