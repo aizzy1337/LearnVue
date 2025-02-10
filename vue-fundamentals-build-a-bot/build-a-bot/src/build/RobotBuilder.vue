@@ -103,6 +103,8 @@ const addToCart = () => {
   cart.value.push({ ...robot, cost });
 };
 
+const headBorderColor = computed(() => (selectedRobot.value.head.onSale ? 'red' : '#aaa'));
+
 const selectNextHead = () => {
   selectHeadIndex.value =
     getNextValidIndex(selectHeadIndex.value, availableParts.heads.length);
@@ -160,6 +162,13 @@ const selectPreviousBase = () => {
   width: 200px;
   height: 200px;
   border: 3px solid #aaa;
+}
+
+.top.part {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 3px solid v-bind("headBorderColor");
 }
 
 .part img {

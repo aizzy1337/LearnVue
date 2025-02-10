@@ -11,22 +11,22 @@
   </header>
   <main>
     <!--<HomePage msg="Welcome to Your Vue.js App" />-->
-    <!--<RobotBuilder />-->
-    <ProductSearch />
+    <RobotBuilder />
+    <!--<ProductSearch />-->
   </main>
 </template>
 
 <script>
 // import HomePage from './home/HomePage.vue';
-// import RobotBuilder from './build/RobotBuilder.vue';
-import ProductSearch from './search/ProductSearch.vue';
+import RobotBuilder from './build/RobotBuilder.vue';
+// import ProductSearch from './search/ProductSearch.vue';
 
 export default {
   name: 'App',
   components: {
     // HomePage,
-    // RobotBuilder,
-    ProductSearch,
+    RobotBuilder,
+    // ProductSearch,
   },
 };
 </script>
@@ -40,7 +40,9 @@ body {
   background: linear-gradient(to bottom, #555, #999);
   background-attachment: fixed;
 }
+</style>
 
+<style scoped>
 main {
   margin: 0 auto;
   padding: 30px;
